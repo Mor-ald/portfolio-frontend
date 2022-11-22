@@ -8,11 +8,9 @@ function ToggleNav() {
 
     return (
         <>
-            <nav className={ styles.topBar }>
-                <div className={ styles.toggle } onClick={ () => setToggleBar(true) }>
-                    <i className={ `pi pi-bars` }/>
-                </div>
-            </nav>
+            <div className={ styles.toggle } onClick={ () => setToggleBar(true) }>
+                <i className={ `pi pi-bars` }/>
+            </div>
 
             <Sidebar visible={ toggleBar } onHide={ () => setToggleBar(false) }>
                 <div className={ styles.verticalNav }>

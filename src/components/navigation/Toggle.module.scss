@@ -1,18 +1,3 @@
-.topBar {
-  width: 100%;
-  height: 2.5rem;
-  box-shadow: 0 0.0625rem 0.3125rem 0.0625rem #f0f0f0;
-  position: fixed;
-  display: flex;
-  justify-content:space-between;
-  background-color: var(--surface-overlay);
-  z-index: 100;
-}
-
-.dark-topbar{
-  background-color: #020202;
-}
-
 .verticalNav {
   display: flex;
   align-items: flex-start;
@@ -21,25 +6,30 @@
 }
 
 .link {
+  margin: 0.4rem 0;
   font-family: var(--font-family);
-  color: var(--indigo-500);
-  font-size: 1.2rem;
+  color: #ffffff;
+  font-size: 1.5rem;
   font-weight: 600;
   text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.link:hover{
+  opacity: 0.65;
 }
 
 .toggle {
   font-size: 2.5em;
-  padding: 0.6rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  background-color: var(--indigo-500);
+  padding: 0.7rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #0f172a;
   color: #ffffff;
   cursor: pointer;
   transition: 0.2s ease;
+  border-bottom-right-radius: 3.5rem;
+  box-shadow: 1px 1px 2px 4px #0f172a;
 }
 
 .toggle:hover{
@@ -47,7 +37,7 @@
 }
 
 .toggle i {
-  font-size: 0.5em;
+  font-size: 0.6em;
   display: flex;
   align-items: center;
 }

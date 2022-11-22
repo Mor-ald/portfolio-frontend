@@ -1,0 +1,63 @@
+.home{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header_sm{
+  margin: 0;
+  padding: 0;
+  color: #363636;
+}
+
+.header_lg{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0.8rem;
+  font-size: 3rem;
+  color: #9D00D5;
+}
+
+.cardContainer{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  margin: 0 1rem;
+  padding: 0.2rem 0.2rem;
+  width: 50%;
+  background: #efefef;
+  color: #363636;
+  box-shadow: none;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.header_pd{
+  font-family: PD-Bold, serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.ptext{
+  color: #9D00D5;
+  font-weight: 600;
+}
+
+.time{
+  display: flex;
+  justify-content: center;
+  span{
+    margin-left: 0.5rem;
+  }
+}
+
+.line{
+  margin: 2rem 0 0 0;
+  width: 100%;
+  height: 3px;
+  background: #363636;
+  border-radius: 2px;
+}

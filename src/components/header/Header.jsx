@@ -5,6 +5,7 @@ function Header(){
         <div>
             <div className={styles.header}></div>
             <div className={styles.backSvg}></div>
+            <div className={styles.line}></div>
 
             <div className={styles.itemsContainer}>
                 <div>

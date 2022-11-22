@@ -13,6 +13,7 @@ function ToggleNav() {
                     <i className={ `pi pi-bars` }/>
                 </div>
             </nav>
+
             <Sidebar visible={ toggleBar } onHide={ () => setToggleBar(false) }>
                 <div className={ styles.verticalNav }>
                     <Link to="/" className={ styles.link } onClick={ () => setToggleBar(false) }>Домашняя страница</Link>

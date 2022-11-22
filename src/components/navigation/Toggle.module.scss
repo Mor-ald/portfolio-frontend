@@ -27,9 +27,11 @@
   background-color: #0f172a;
   color: #ffffff;
   cursor: pointer;
+  position: fixed;
   transition: 0.2s ease;
   border-bottom-right-radius: 3.5rem;
   box-shadow: 1px 1px 2px 4px #0f172a;
+  z-index: 20;
 }
 
 .toggle:hover{

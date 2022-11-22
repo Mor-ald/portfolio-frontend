@@ -1,0 +1,47 @@
+.footer{
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #A600E0 0%, #6D0094 100%);
+}
+
+.vk{
+  margin: 0 0.5rem;
+  width: 32px;
+  height: 32px;
+  background-image: url("../../../public/assets/akar-icons_vk-fill.svg");
+  background-repeat: no-repeat;
+  transition: 0.2s ease;
+}
+
+.vk:hover{
+  background-image: url("../../../public/assets/vk_d.svg");
+}
+
+.tel{
+  margin: 0 0.5rem;
+  width: 32px;
+  height: 32px;
+  background-image: url("../../../public/assets/file-icons_telegram.svg");
+  background-repeat: no-repeat;
+  transition: 0.2s ease;
+}
+
+.tel:hover{
+  background-image: url("../../../public/assets/teleg_d.svg");
+}
+
+.git{
+  margin: 0 0.5rem;
+  width: 32px;
+  height: 32px;
+  background-image: url("../../../public/assets/akar-icons_github-fill.svg");
+  background-repeat: no-repeat;
+  transition: 0.2s ease;
+}
+
+.git:hover{
+  background-image: url("../../../public/assets/git_d.svg");
+}

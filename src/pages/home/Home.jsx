@@ -1,4 +1,5 @@
 import Header from "../../components/header/Header.jsx";
+import Footer from "../../components/footer/Footer.jsx";
 import {Card} from "primereact/card";
 import styles from "./Home.module.scss"
 
@@ -59,6 +60,7 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </>
     );
 }

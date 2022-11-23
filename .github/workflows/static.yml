@@ -6,7 +6,7 @@ on:
     branches: ["master"]
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -14,14 +14,14 @@ jobs:
           node-version: '16'
           cache: 'yarn'
       - name: Install project dependencies
-        run: yarn --prefer-offline
+        run: yarn
       - name: Build project
         run: yarn build
   
   deploy:
     needs:
       - build
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - name: Deploy to Netlify

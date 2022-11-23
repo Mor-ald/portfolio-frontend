@@ -5,6 +5,8 @@ on:
   pull_request:
     branches: ["master"]
 jobs:
+
+  # Build frontend app
   build:
     runs-on: ubuntu-20.04
     steps:
@@ -21,10 +23,18 @@ jobs:
         run: yarn build
       - name: Check
         run: ls
+  
+  # Deploy to Netlify 
+  deploy:
+    needs:
+      - build
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2
         with:
-          publish-dir: './'
+          publish-dir: '/dist'
           production-branch: master
           github-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-message: "Deploy from GitHub Actions"

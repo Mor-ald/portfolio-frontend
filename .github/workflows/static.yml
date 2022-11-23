@@ -8,11 +8,9 @@ on:
 
 
 jobs:
-  
   # Build frontend app
   build-frontend-app:
     runs-on: ubuntu-18.04
-    
     steps:
       - name: Checkout Last Branch Commit
       - uses: actions/checkout@v2
@@ -31,12 +29,10 @@ jobs:
       
   # Deploy frontend app in Netlify
   deploy-frontend-app:
-    
     needs:
       - build-frontend-app
 
     runs-on: ubuntu-18.04
-    
     steps:
       - uses: actions/checkout@v2
       - name: Deploy to Netlify

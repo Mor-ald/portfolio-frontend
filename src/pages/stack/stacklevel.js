@@ -12,6 +12,6 @@ export const stacklevel = [
     {link: "/assets//python-original-wordmark.svg", name: "Python", level: 2, color: "#FFCF46"},
     {link: "/assets/gitlab-original-wordmark.svg", name: "Gitlab", level: 3, color: "#F24E1E"},
     {link: "/assets/sass-original.svg", name: "SASS", level: 4, color: "#CB6699"},
-    {link: "public/assets/react-original-wordmark.svg", name: "ReactJS", level: 3, color: "#61DAFB"},
-    {link: "public/assets/github-original-wordmark.svg", name: "GitHub", level: 3, color: "#0ACF83"},
+    {link: "/assets/react-original-wordmark.svg", name: "ReactJS", level: 3, color: "#61DAFB"},
+    {link: "/assets/github-original-wordmark.svg", name: "GitHub", level: 3, color: "#0ACF83"},
 ];

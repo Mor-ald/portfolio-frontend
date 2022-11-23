@@ -9,5 +9,5 @@ export const myCourses = [
     {name: "Data Manipulation with pandas, Datacamp", link: "https://www.datacamp.com/courses/data-manipulation-with-pandas"},
     {name: "Building Recommendation Engines in Python, Datacapm", link: "https://www.datacamp.com/courses/building-recommendation-engines-in-python"},
     {name: "Cluster Analysis in Python, Datacamp", link: "https://www.datacamp.com/courses/cluster-analysis-in-python"},
-    {name: "Machine Learning, Datacamp", link: "https://www.datacamp.com/courses/understanding-machine-learning"},
+    {name: "Machine Learning, Datacamp", link: "https://www.datacamp.com/courses/understanding-machine-learning"}
 ];

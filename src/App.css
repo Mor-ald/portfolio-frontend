@@ -6,3 +6,7 @@
 .p-card-content{
     padding: 0 !important;
 }
+
+.p-scrollpanel-bar{
+    opacity: 1 !important;
+}

@@ -1,4 +1,4 @@
-const works = [
+export const myWorks = [
     {name: "Анализ времени сборки проекта на JAMstack генераторами статических сайтов в зависимости от числа страниц", link: "https://disk.yandex.ru/i/Hpxh41mpTKPk4g"},
     {name: "Анализ зарубежных и отечественных научных источников по теме исследования «Исследование современных подходов к проектированию и разработке на JAMstack»", link: "https://disk.yandex.ru/i/16VajTJ1NMVMCA"},
     {name: "Проектирование схемы базы данных для интернет-магазина по продаже автотоваров и автозапчастей", link: "https://disk.yandex.ru/i/Nl3MkkIYOLFntQ"},
@@ -9,5 +9,5 @@ const works = [
     {name: "Чекинаторы веб (2 семестр)", link: "https://github.com/Mor-ald/xsl"},
     {name: "Задание по докеру (счетчик c БД)", link: "https://github.com/Mor-ald/task7_docker"},
     {name: "Задание на асинхронность", link: "https://replit.com/@Morald/goss3?v=1"},
-    {name: "Веб-приложение на node.js по заголовкам", link: "https://replit.com/@Morald/goss4?v=1"},
+    {name: "Веб-приложение на node.js по заголовкам", link: "https://replit.com/@Morald/goss4?v=1"}
 ]

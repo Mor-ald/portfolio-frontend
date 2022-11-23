@@ -5,11 +5,10 @@ on:
   pull_request:
     branches: ["master"]
 jobs:
-
-  # Build frontend app
-  build:
+  build-and-deploy:
     runs-on: ubuntu-20.04
     steps:
+      # Install Node.js and yarn
       - uses: actions/checkout@v2
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -17,12 +16,16 @@ jobs:
           node-version: '16'
       - name: Install yarn
         run: npm install yarn -g
+        
+      # Install dependencies and build projects
       - name: Install project dependencies
         run: yarn
       - name: Build project
         run: yarn build
       - name: Check
         run: ls
+        
+      # Deploy project to Netlify
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2
         with:

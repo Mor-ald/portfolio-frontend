@@ -40,7 +40,7 @@ function Home() {
                         <Card className={styles.card}>
                             <h3 className={styles.header_pd}>Образование</h3>
                             <p className={styles.time}>
-                                <img src="../../src/assets/akar-icons_calendar.svg" alt="" />
+                                <img src="../../../public/assets/akar-icons_calendar.svg" alt="" />
                                 <span>Сентябрь 2016 - Январь 2020</span>
                             </p>
                             <p>
@@ -49,7 +49,7 @@ function Home() {
                                 Санкт-Петербург. <span className={styles.ptext}>Средний балл 4,6.</span>
                             </p>
                             <p className={styles.time}>
-                                <img src="../../src/assets/akar-icons_calendar.svg" alt="" />
+                                <img src="../../../public/assets/akar-icons_calendar.svg" alt="" />
                                 <span>Сентябрь 2021 - Июль 2023</span>
                             </p>
                             <p>

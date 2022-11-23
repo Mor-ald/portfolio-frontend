@@ -16,17 +16,5 @@ jobs:
   build-frontend-app:
     runs-on: ubuntu-18.04
     steps:
-      - name: Checkout Last Branch Commit
-      - uses: actions/checkout@v2
-      
-      - name: Setup Node.js environment
-      - uses: actions/setup-node@v3.5.1
-        
-      - name: Cache
-      - uses: actions/cache@v3.0.11
-        
-      - name: Install Dependencies
-        run: yarn
-
-      - name: Run Build 
-        run: yarn build
+      - name: Print Hello msg
+      - run: echo "Hello world"

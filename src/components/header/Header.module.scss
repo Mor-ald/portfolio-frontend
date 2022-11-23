@@ -2,7 +2,7 @@
   position: absolute;
   width: 100%;
   height: 285px;
-  background-image: url("../../../public/assets/back.svg");
+  background-image: url("../../assets/back.svg");
   z-index: 10;
 }
 
@@ -57,37 +57,37 @@
   background: #0f172a;
   color: white;
 
-  .iloc{background-image: url("../../../public/assets/ep_location_w.svg");}
-  .iedu{background-image: url("../../../public/assets/cil_education_w.svg");}
-  .iemail{background-image: url("../../../public/assets/carbon_email_w.svg");}
-  .ieng{background-image: url("../../../public/assets/icon-park-outline_english_w.svg");}
+  .iloc{background-image: url("../../assets/ep_location_w.svg");}
+  .iedu{background-image: url("../../assets/cil_education_w.svg");}
+  .iemail{background-image: url("../../assets/carbon_email_w.svg");}
+  .ieng{background-image: url("../../assets/icon-park-outline_english_w.svg");}
 }
 
 .iloc{
   width: 24px;
   height: 24px;
-  background-image: url("../../../public/assets/ep_location.svg");
+  background-image: url("../../assets/ep_location.svg");
   background-repeat: no-repeat;
 }
 
 .iedu{
   width: 24px;
   height: 24px;
-  background-image: url("../../../public/assets/cil_education.svg");
+  background-image: url("../../assets/cil_education.svg");
   background-repeat: no-repeat;
 }
 
 .iemail{
   width: 24px;
   height: 24px;
-  background-image: url("../../../public/assets/carbon_email.svg");
+  background-image: url("../../assets/carbon_email.svg");
   background-repeat: no-repeat;
 }
 
 .ieng{
   width: 24px;
   height: 24px;
-  background-image: url("../../../public/assets/icon-park-outline_english.svg");
+  background-image: url("../../assets/icon-park-outline_english.svg");
   background-repeat: no-repeat;
 }
 
@@ -114,9 +114,9 @@
     background: #0f172a;
     color: white;
 
-    .iloc{background-image: url("../../../public/assets/ep_location_w.svg");}
-    .iedu{background-image: url("../../../public/assets/cil_education_w.svg");}
-    .iemail{background-image: url("../../../public/assets/carbon_email_w.svg");}
-    .ieng{background-image: url("../../../public/assets/icon-park-outline_english_w.svg");}
+    .iloc{background-image: url("../../assets/ep_location_w.svg");}
+    .iedu{background-image: url("../../assets/cil_education_w.svg");}
+    .iemail{background-image: url("../../assets/carbon_email_w.svg");}
+    .ieng{background-image: url("../../assets/icon-park-outline_english_w.svg");}
   }
 }

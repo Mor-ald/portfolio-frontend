@@ -21,7 +21,7 @@ function Header(){
                     </a>
                 </div>
                 <div>
-                    <img className={styles.photo} src={"../../../public/assets/photo.png"} alt={"Photo"}/>
+                    <img className={styles.photo} src={"../../src/assets/photo.png"} alt={"Photo"}/>
                 </div>
                 <div>
                     <a className={styles.item} href="mailto:mor.ald@yandex.ru" target={"_blank"}>

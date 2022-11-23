@@ -1,4 +1,8 @@
 @font-face {
     font-family: PD-Bold;
-    src: url("../public/fonts/PlayfairDisplay-ExtraBold.ttf");
+    src: url("./fonts/PlayfairDisplay-ExtraBold.ttf");
+}
+
+.p-card-content{
+    padding: 0 !important;
 }

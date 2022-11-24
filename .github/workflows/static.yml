@@ -28,7 +28,8 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: build
-          path: /dist
+          path: |
+            dist
             
   deploy-frontend-app: 
     needs: build-frontend-app

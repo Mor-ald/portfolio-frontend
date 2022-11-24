@@ -40,6 +40,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build
+          path: dist
     
     # Deploy project to Netlify
       - name: Deploy to Netlify

@@ -61,3 +61,15 @@
   background: #363636;
   border-radius: 2px;
 }
+
+@media (max-width: 1170px) {
+  .cardContainer{
+    width: 98%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    width: 100%;
+  }
+}

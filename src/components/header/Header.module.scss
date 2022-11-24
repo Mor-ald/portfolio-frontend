@@ -34,6 +34,7 @@
   justify-content: center;
   align-items: center;
   z-index: 30;
+  margin-right: 4rem;
 }
 
 .item{
@@ -102,12 +103,13 @@
   }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1170px) {
   .itemsContainer {
     flex-direction: column;
     :nth-child(3){
       order: -1;
     }
+    margin-right: 0;
   }
   .item{
     margin: 0.5rem 0;

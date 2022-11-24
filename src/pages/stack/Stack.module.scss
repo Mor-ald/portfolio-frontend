@@ -79,3 +79,10 @@
     border-radius: 2px;
   }
 }
+
+@media (max-width: 1170px) {
+  .header_lg{
+    text-align: center;
+    line-height: 40px;
+  }
+}

@@ -82,6 +82,7 @@
 }
 
 @media (max-width: 1170px) {
+
   .itemsContainer {
     flex-direction: column;
     :nth-child(3){
@@ -89,9 +90,16 @@
     }
     margin-right: 0;
   }
+
   .item{
     margin: 0.5rem 0;
-    background: #0f172a;
+    background: #000000;
     color: white;
+
+    svg path{fill: white}
+  }
+
+  .item:hover{
+    opacity: 0.85;
   }
 }

@@ -18,17 +18,12 @@
   box-shadow: 0.8rem 0.8rem #ffa178;
 }
 
-.header_sm{
-  margin: 0;
-  padding: 0;
-  color: #0f172a;
-}
-
 .header_lg{
   margin: 0;
   padding-top: 1.2rem;
   font-size: 3rem;
   color: #0f172a;
+  line-height: 3rem;
 }
 
 .cardContainer{
@@ -93,11 +88,14 @@
   .time{
     justify-content: center;
   }
+  .headers{
+    width: 90%;
+    padding: 1rem 1rem;
+  }
 }
 
 @media (max-width: 370px) {
   .headers{
-    padding: 1rem 2rem;
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem #ffa178;
   }

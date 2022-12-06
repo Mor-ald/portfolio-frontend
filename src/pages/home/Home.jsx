@@ -10,8 +10,10 @@ function Home() {
             <div className={styles.container}>
                 <div className={styles.home}>
                     <div className={styles.headers}>
-                        <h3 className={styles.header_sm}>Привет, меня зовут</h3>
-                        <h2 className={styles.header_lg}>Алексей</h2>
+                        <h2 className={styles.header_lg}>
+                            Привет, меня зовут <br/>
+                            Алексей
+                        </h2>
                     </div>
 
                     <div className={styles.cardContainer}>

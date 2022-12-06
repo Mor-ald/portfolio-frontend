@@ -19,11 +19,11 @@ function Stack() {
     return (
         <>
             <Header/>
-            <div>
+            <div className={styles.containerStack}>
                 <div className={styles.stack}>
-                    <h3 className={styles.header_sm}>Мой</h3>
-                    <h2 className={styles.header_lg}>Стек технологий</h2>
-                    <hr className={styles.line}/>
+                    <div className={styles.headers}>
+                        <h2 className={styles.header_lg}>Мой cтек технологий</h2>
+                    </div>
                     <div className={styles.container}>
                         {stacklevel.map((item) => (
                             <div className={styles.techCard}>

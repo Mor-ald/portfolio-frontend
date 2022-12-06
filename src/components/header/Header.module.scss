@@ -1,3 +1,7 @@
+.container{
+  background: #fafaf2;
+}
+
 .header{
   position: absolute;
   width: 100%;
@@ -12,7 +16,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(180deg, #5E0080 0%, #9D00D5 100%);
+  background: linear-gradient(180deg, #000000 100%, rgba(0, 0, 0, 0.95) 0%);
   z-index: 0;
 }
 
@@ -23,12 +27,12 @@
   width: 100%;
   height: 8px;
   z-index: 20;
-  background: #5E0080;
+  background: #000000;
 }
 
 .itemsContainer{
   position: relative;
-  padding-top: 170px;
+  padding-top: 180px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -39,65 +43,35 @@
 
 .item{
   padding: 0.5rem 1rem;
-  margin: 5rem 2rem 0 2rem;
-  border-radius: 0.5rem;
+  margin: 5rem 0.5rem 0 0.5rem;
+  border-radius: 0.4rem;
   display: flex;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 1rem;
-  color: #363636;
+  font-family: 'CirceRounded',Arial,sans-serif;
+  font-size: 0.9rem;
+  color: #201e1e;
+  font-weight: 600;
   cursor: pointer;
   transition: 0.2s ease;
   text-decoration: none;
   span{
     margin-left: 0.3rem;
   }
+  svg path{fill: #201e1e}
+}
+
+.itemsContainer div:last-child svg path{
+  fill: white;
 }
 
 .item:hover{
-  background: #0f172a;
+  background: #000000;
   color: white;
 
-  .iloc{background-image: url("../../../public/assets/ep_location_w.svg");}
-  .iedu{background-image: url("../../../public/assets/cil_education_w.svg");}
-  .iemail{background-image: url("../../../public/assets/carbon_email_w.svg");}
-  .ieng{background-image: url("../../../public/assets/icon-park-outline_english_w.svg");}
-}
-
-.iloc{
-  width: 24px;
-  height: 24px;
-  background-image: url("../../../public/assets/ep_location.svg");
-  background-repeat: no-repeat;
-  transition: 0s;
-}
-
-.iedu{
-  width: 24px;
-  height: 24px;
-  background-image: url("../../../public/assets/cil_education.svg");
-  background-repeat: no-repeat;
-  transition: 0s;
-}
-
-.iemail{
-  width: 24px;
-  height: 24px;
-  background-image: url("../../../public/assets/carbon_email.svg");
-  background-repeat: no-repeat;
-  transition: 0s;
-}
-
-.ieng{
-  width: 24px;
-  height: 24px;
-  background-image: url("../../../public/assets/icon-park-outline_english.svg");
-  background-repeat: no-repeat;
-  transition: 0s;
+  svg path{fill: white}
 }
 
 .photo{
-  border: 8px solid #5E0080;
+  border: 8px solid #000000;
   border-radius: 50%;
 }
 
@@ -119,10 +93,5 @@
     margin: 0.5rem 0;
     background: #0f172a;
     color: white;
-
-    .iloc{background-image: url("../../../public/assets/ep_location_w.svg");}
-    .iedu{background-image: url("../../../public/assets/cil_education_w.svg");}
-    .iemail{background-image: url("../../../public/assets/carbon_email_w.svg");}
-    .ieng{background-image: url("../../../public/assets/icon-park-outline_english_w.svg");}
   }
 }

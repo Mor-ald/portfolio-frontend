@@ -20,7 +20,6 @@
 
 .header_lg{
   margin: 0;
-  padding-top: 1.2rem;
   font-size: 3rem;
   color: #0f172a;
   line-height: 3rem;
@@ -102,5 +101,8 @@
   .card{
     font-size: 1.1rem;
     line-height: 1.8rem;
+  }
+  .header_lg{
+    font-size: 2.5rem;
   }
 }

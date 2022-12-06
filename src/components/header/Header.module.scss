@@ -44,10 +44,10 @@
 .item{
   padding: 0.5rem 1rem;
   margin: 5rem 0.5rem 0 0.5rem;
-  border-radius: 0.4rem;
+  border-radius: 0.6rem;
   display: flex;
   font-family: 'CirceRounded',Arial,sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #201e1e;
   font-weight: 600;
   cursor: pointer;
@@ -71,7 +71,7 @@
 }
 
 .photo{
-  border: 8px solid #000000;
+  border: 10px solid #000000;
   border-radius: 50%;
 }
 
@@ -95,11 +95,13 @@
     margin: 0.5rem 0;
     background: #000000;
     color: white;
-
+    box-shadow: 0.05rem 0.05rem 0.1rem 0 #000000;
     svg path{fill: white}
   }
 
   .item:hover{
     opacity: 0.85;
   }
+
+
 }

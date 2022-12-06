@@ -7,32 +7,33 @@ function Home() {
     return (
         <>
             <Header/>
-            <div>
+            <div className={styles.container}>
                 <div className={styles.home}>
-                    <h3 className={styles.header_sm}>Привет, меня зовут</h3>
-                    <h2 className={styles.header_lg}>Алексей</h2>
-                    <hr className={styles.line}/>
+                    <div className={styles.headers}>
+                        <h3 className={styles.header_sm}>Привет, меня зовут</h3>
+                        <h2 className={styles.header_lg}>Алексей</h2>
+                    </div>
+
                     <div className={styles.cardContainer}>
                         <Card className={styles.card}>
                             <h3 className={styles.header_pd}>Обо мне</h3>
                             <p>
-                                Я <span className={styles.ptext}>Junior Front-end Developer</span> ,
-                                более двух
-                                лет я занимаюсь <span className={styles.ptext}>версткой</span> и
+                                Я <code className={styles.ptext}>Junior Front-end Developer,</code> более двух
+                                лет я занимаюсь <code className={styles.ptext}>версткой</code> и
                                 несколько месяцев
-                                работаю <span className={styles.ptext}>React-разработчиком</span>.
+                                работаю <code className={styles.ptext}>React-разработчиком.</code>
                             </p>
                             <p>
                                 Развиваюсь в области разработки
-                                веб-приложений на языке <span className={styles.ptext}>JavaScript</span> и
-                                экосистемы <span className={styles.ptext}>Node.js</span>. Веду научную
+                                веб-приложений на языке <code className={styles.ptext}>JavaScript</code> и
+                                экосистемы <code className={styles.ptext}>Node.js.</code> Веду научную
                                 деятельность
                                 в направлении проектирования и разработки
-                                приложений на бессерверной архитектуре <span className={styles.ptext}>JAMstack</span>.
+                                приложений на бессерверной архитектуре <code className={styles.ptext}>JAMstack.</code>
                             </p>
                             <p>
-                                Из своих главных качеств могу выделить: <span className={styles.ptext}>уcидчивость,
-                                терпение, ответсвенный подход к работе. </span>
+                                Из своих главных качеств могу выделить: <code className={styles.ptext}>уcидчивость,
+                                терпение, ответсвенный подход к работе. </code>
                                 Спокойно принимаю критику в свой адрес
                                     и всегда готов найти компромисс в конфликте.
                             </p>
@@ -40,16 +41,22 @@ function Home() {
                         <Card className={styles.card}>
                             <h3 className={styles.header_pd}>Образование</h3>
                             <p className={styles.time}>
-                                <img src="../../../public/assets/akar-icons_calendar.svg" alt="" />
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 4H6C3.79086 4 2 5.79086 2 8V18C2 20.2091 3.79086 22 6 22H18C20.2091 22 22 20.2091 22 18V8C22 5.79086 20.2091 4 18 4Z" stroke="#ffa178" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 2V6M16 2V6M2 10H22" stroke="#ffa178" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                                 <span>Сентябрь 2016 - Январь 2020</span>
                             </p>
                             <p>
                                 Техническая эксплуатация авиационных систем и
                                 пилотажно-навигационных комплексов, ГУАП,
-                                Санкт-Петербург. <span className={styles.ptext}>Средний балл 4,6.</span>
+                                Санкт-Петербург. <code className={styles.ptext}>Средний балл 4,6.</code>
                             </p>
                             <p className={styles.time}>
-                                <img src="../../../public/assets/akar-icons_calendar.svg" alt="" />
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 4H6C3.79086 4 2 5.79086 2 8V18C2 20.2091 3.79086 22 6 22H18C20.2091 22 22 20.2091 22 18V8C22 5.79086 20.2091 4 18 4Z" stroke="#ffa178" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 2V6M16 2V6M2 10H22" stroke="#ffa178" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                                 <span>Сентябрь 2021 - Июль 2023</span>
                             </p>
                             <p>

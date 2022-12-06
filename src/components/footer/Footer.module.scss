@@ -1,47 +1,40 @@
 .footer{
+  position: relative;
   width: 100%;
-  padding: 1rem;
+  padding: 0.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, #A600E0 0%, #6D0094 100%);
+  background: linear-gradient(180deg, #000000 0%, rgba(3, 3, 3, 0.95) 100%);
 }
 
-.vk{
+.vk,
+.tel,
+.git{
   margin: 0 0.5rem;
-  width: 32px;
-  height: 32px;
-  background-image: url("../../../public/assets/akar-icons_vk-fill.svg");
-  background-repeat: no-repeat;
   transition: 0.2s ease;
+  z-index: 20;
 }
 
 .vk:hover{
-  background-image: url("../../../public/assets/vk_d.svg");
-}
-
-.tel{
-  margin: 0 0.5rem;
-  width: 32px;
-  height: 32px;
-  background-image: url("../../../public/assets/file-icons_telegram.svg");
-  background-repeat: no-repeat;
-  transition: 0.2s ease;
+  opacity: 0.6;
 }
 
 .tel:hover{
-  background-image: url("../../../public/assets/teleg_d.svg");
-}
-
-.git{
-  margin: 0 0.5rem;
-  width: 32px;
-  height: 32px;
-  background-image: url("../../../public/assets/akar-icons_github-fill.svg");
-  background-repeat: no-repeat;
-  transition: 0.2s ease;
+  opacity: 0.6;
 }
 
 .git:hover{
-  background-image: url("../../../public/assets/git_d.svg");
+  opacity: 0.6;
+}
+
+.backSvg{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 59px;
+  background-image: url("../../../public/assets/back.svg");
+  background-position: center;
+  z-index: 10;
+  opacity: 0.6;
 }

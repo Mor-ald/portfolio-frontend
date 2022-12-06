@@ -5,6 +5,12 @@
   flex-direction: column;
 }
 
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .link {
   margin: 0.4rem 0;
   font-family: var(--font-family);
@@ -13,9 +19,11 @@
   font-weight: 600;
   text-decoration: none;
   transition: 0.2s ease;
+
 }
 
 .link:hover{
+  color: #ffeee4;;
   opacity: 0.65;
 }
 
@@ -42,4 +50,30 @@
   font-size: 0.6em;
   display: flex;
   align-items: center;
+}
+
+.sidebarLinks{
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.vk,
+.tel,
+.git{
+  margin: 0 0.3rem;
+  transition: 0.2s ease;
+}
+
+.vk:hover svg path{
+  fill: #ffeee4;
+}
+
+.tel:hover svg path{
+  fill: #ffeee4;
+
+}
+
+.git:hover svg path{
+  fill: #ffeee4;
 }

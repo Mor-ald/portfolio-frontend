@@ -3,15 +3,15 @@
     src: url("./fonts/PlayfairDisplay-ExtraBold.ttf");
 }
 
-.p-card-content{
+.p-card-content {
     padding: 0 !important;
 }
 
-.p-scrollpanel-bar{
+.p-scrollpanel-bar {
     opacity: 1 !important;
 }
 
-.p-sidebar-content{
+.p-sidebar-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;

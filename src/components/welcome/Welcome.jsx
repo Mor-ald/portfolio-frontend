@@ -1,5 +1,4 @@
-
-import styles from './Welcome.module.scss';
+import styles from "./Welcome.module.scss";
 
 function Welcome(props) {
     return (

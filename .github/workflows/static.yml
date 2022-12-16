@@ -1,61 +1,59 @@
 name: Build and Deploy to Netlify
 on:
-  push:
-    branches: ["master"]
-  pull_request:
-    branches: ["master"]
+    push:
+        branches: ["master"]
+    pull_request:
+        branches: ["master"]
 jobs:
-  build-frontend-app:
-    runs-on: ubuntu-20.04
-    steps:
-      # Install Node.js and yarn
-      - uses: actions/checkout@v2
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-      - name: Install yarn
-        run: npm install yarn -g
-        
-      # Install dependencies and build projects
-      - name: Install project dependencies
-        run: yarn
-      - name: Build project
-        run: yarn build
-      
-      # Create artifact
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: build
-          path: |
-            dist
-            
-  deploy-frontend-app: 
-    needs: build-frontend-app
-    runs-on: ubuntu-20.04
-    steps:
-    # Download artifact
-      - name: Download a build artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: build
-          path: dist
-    
-    # Deploy project to Netlify
-      - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v1.2
-        with:
-          publish-dir: './dist'
-          production-branch: master
-          github-token: ${{ secrets.ACCESS_TOKEN }}
-          deploy-message: "Deploy from GitHub Actions"
-          enable-pull-request-comment: false
-          enable-commit-comment: true
-          overwrites-pull-request-comment: true
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        timeout-minutes: 1
-        
-  
+    build-frontend-app:
+        runs-on: ubuntu-20.04
+        steps:
+            # Install Node.js and yarn
+            - uses: actions/checkout@v2
+            - name: Set up Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: "16"
+            - name: Install yarn
+              run: npm install yarn -g
+
+            # Install dependencies and build projects
+            - name: Install project dependencies
+              run: yarn
+            - name: Build project
+              run: yarn build
+
+            # Create artifact
+            - name: Archive production artifacts
+              uses: actions/upload-artifact@v3
+              with:
+                  name: build
+                  path: |
+                      dist
+
+    deploy-frontend-app:
+        needs: build-frontend-app
+        runs-on: ubuntu-20.04
+        steps:
+            # Download artifact
+            - name: Download a build artifact
+              uses: actions/download-artifact@v3
+              with:
+                  name: build
+                  path: dist
+
+            # Deploy project to Netlify
+            - name: Deploy to Netlify
+              uses: nwtgck/actions-netlify@v1.2
+              with:
+                  publish-dir: "./dist"
+                  production-branch: master
+                  github-token: ${{ secrets.ACCESS_TOKEN }}
+                  deploy-message: "Deploy from GitHub Actions"
+                  enable-pull-request-comment: false
+                  enable-commit-comment: true
+                  overwrites-pull-request-comment: true
+              env:
+                  NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+                  NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+              timeout-minutes: 1

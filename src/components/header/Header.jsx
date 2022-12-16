@@ -61,7 +61,7 @@ function Header() {
                 <div>
                     <img
                         className={styles.photo}
-                        src="../../../public/assets/photo.png"
+                        src="/public/assets/photo.png"
                         alt={"Photo"}
                     />
                 </div>

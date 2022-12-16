@@ -10,21 +10,6 @@
   font-family: 'CirceRounded',Arial,sans-serif;;
 }
 
-.headers{
-  text-align: center;
-  padding: 1.5rem 3rem;
-  border: 0.5rem solid #1e1e1e;
-  border-radius: 1.4rem;
-  box-shadow: 0.8rem 0.8rem #ffa178;
-}
-
-.header_lg{
-  margin: 0;
-  font-size: 3rem;
-  color: #0f172a;
-  line-height: 3rem;
-}
-
 .cardContainer{
   margin: 1rem;
   display: flex;
@@ -64,11 +49,20 @@
 
 .time{
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  color: white;
+  padding: 0.1rem 0.3rem 0.2rem 0.3rem;
+  font-weight: 600;
+  background: #212125;
+  border-radius: 0.5rem;
   span{
     margin-left: 0.5rem;
   }
+}
+
+.education{
+  text-align: center;
 }
 
 @media (max-width: 1170px) {

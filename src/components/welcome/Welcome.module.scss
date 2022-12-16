@@ -1,0 +1,32 @@
+.headers{
+  text-align: center;
+  padding: 1.5rem 3rem;
+  border: 0.5rem solid #1e1e1e;
+  border-radius: 1.4rem;
+  box-shadow: 0.8rem 0.8rem #ffa178;
+}
+
+.header_lg{
+  margin: 0;
+  font-size: 3rem;
+  color: #0f172a;
+  line-height: 3rem;
+}
+
+@media (max-width: 1170px) {
+  .headers{
+    width: 90%;
+    padding: 1rem 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .headers{
+    padding: 3rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem #ffa178;
+  }
+  .header_lg{
+    line-height: 3rem;
+  }
+}

@@ -22,7 +22,7 @@ function Stack() {
             <div className={styles.containerStack}>
                 <div className={styles.stack}>
                     <div className={styles.headers}>
-                        <h2 className={styles.header_lg}>Мой cтек технологий</h2>
+                        <h2 className={styles.header_lg}>Мой стек технологий</h2>
                     </div>
                     <div className={styles.container}>
                         {stacklevel.map((item) => (

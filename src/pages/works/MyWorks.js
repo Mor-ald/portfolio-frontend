@@ -5,9 +5,8 @@ export const myWorks = [
     {name: "Современные методы и инструменты проектирования и разработки веб-приложений и приложений на архитектуре JAMstack", link: "https://disk.yandex.ru/i/rTH0GqQ4Fnu8xg"},
     {name: "Создание структуры базы данных", link: "https://disk.yandex.ru/i/XlR9tvyJh9oSgg"},
     {name: "Улучшение структуры базы данных", link: "https://disk.yandex.ru/i/z50OdeB-hie-RA"},
-    {name: "Топ 10 команд докера", link: "https://mor-ald.github.io/Docker-4/"},
     {name: "Чекинаторы веб (2 семестр)", link: "https://github.com/Mor-ald/xsl"},
-    {name: "Задание по докеру (счетчик c БД)", link: "https://github.com/Mor-ald/task7_docker"},
     {name: "Задание на асинхронность", link: "https://replit.com/@Morald/goss3?v=1"},
-    {name: "Веб-приложение на node.js по заголовкам", link: "https://replit.com/@Morald/goss4?v=1"}
+    {name: "Веб-приложение на node.js по заголовкам", link: "https://replit.com/@Morald/goss4?v=1"},
+    {name: "Задания по докеру", link: "https://github.com/Mor-ald/tasks-docker-pis"},
 ]

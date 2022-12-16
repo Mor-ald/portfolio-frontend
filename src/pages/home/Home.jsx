@@ -2,6 +2,7 @@ import Header from "../../components/header/Header.jsx";
 import Footer from "../../components/footer/Footer.jsx";
 import {Card} from "primereact/card";
 import styles from "./Home.module.scss"
+import Welcome from "../../components/welcome/Welcome.jsx";
 
 function Home() {
     return (
@@ -9,13 +10,7 @@ function Home() {
             <Header/>
             <div className={styles.container}>
                 <div className={styles.home}>
-                    <div className={styles.headers}>
-                        <h2 className={styles.header_lg}>
-                            Привет, меня зовут <br/>
-                            Алексей
-                        </h2>
-                    </div>
-
+                    <Welcome firstText={"Привет, меня зовут"} secondText={"Алексей"}/>
                     <div className={styles.cardContainer}>
                         <Card className={styles.card}>
                             <h3 className={styles.header_pd}>Обо мне</h3>
@@ -49,10 +44,10 @@ function Home() {
                                 </svg>
                                 <span>Сентябрь 2016 - Январь 2020</span>
                             </p>
-                            <p>
+                            <p className={styles.education}>
                                 Техническая эксплуатация авиационных систем и
                                 пилотажно-навигационных комплексов, ГУАП,
-                                Санкт-Петербург. <code className={styles.ptext}>Средний балл 4,6.</code>
+                                Санкт-Петербург. Средний балл 4,6.
                             </p>
                             <p className={styles.time}>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +56,7 @@ function Home() {
                                 </svg>
                                 <span>Сентябрь 2021 - Июль 2023</span>
                             </p>
-                            <p>
+                            <p className={styles.education}>
                                 Веб-Технологии (технологии front-end и back-end
                                 разработки), ИТМО, Санкт-Петербург.
                             </p>

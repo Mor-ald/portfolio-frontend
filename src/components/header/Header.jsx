@@ -61,7 +61,7 @@ function Header() {
                 <div>
                     <img
                         className={styles.photo}
-                        src="https://github.com/Mor-ald/portfolio-frontend/blob/master/public/assets/photo.png"
+                        src="/assets/photo.png"
                         alt={"Photo"}
                     />
                 </div>
